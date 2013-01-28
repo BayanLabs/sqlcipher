@@ -184,6 +184,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -202,6 +203,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = sqlcipher;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -209,6 +211,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD_32_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				HEADER_SEARCH_PATHS = (
@@ -226,6 +229,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = sqlcipher;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
